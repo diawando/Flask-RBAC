@@ -19,7 +19,7 @@ class User (db.Model, UserMixin):
     
 
 # create table in database for storing roles
-class Role(db.Model, RoleMixin)
+class Role(db.Model, RoleMixin):
     __tablename__ = 'role'
     id = db.Column (db.Integer(), primary_key=True)
     name = db.Column (db.String(80), unique=True)
